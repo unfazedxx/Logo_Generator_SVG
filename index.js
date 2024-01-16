@@ -6,6 +6,5 @@ const shapes = require ('./library/shapes');
 const init = () => {
     inquirer.prompt(questions)
     .then((data) => {
-
     })
 }
