@@ -22,8 +22,8 @@ const questions = [
     {
         type: 'input',
         name: 'textColor',
-        message: 'Please enter the color (or hexcode) for the text of your logo:',
+        message: 'Please enter the color (or hexcode) for the text in your logo:',
     },
 ];
 
-module.export(questions);
+module.exports = questions;
