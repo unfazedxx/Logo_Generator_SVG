@@ -9,13 +9,13 @@ const questions = [
     // enter text 
     {
         type: 'input',
-        name: 'enterText',
+        name: 'text',
         message: 'Please enter up to 3 characters for your logo:',
     },
     //enter backround color 
     {
         type: 'input',
-        name: 'bgColor',
+        name: 'fill',
         message: 'Please enter a color (or hexcode) for the backround of your logo:',
     },
     //enter text color 
