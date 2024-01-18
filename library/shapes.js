@@ -24,7 +24,7 @@ class Circle extends Shapes {
         this.textColor = textColor;    
     }
 
-    renderCircle() {
+    render() {
         return `<svg version="1.1"
         width= "400" height= "400"
         xmlns= "http://www.w3.org/2000/svg">
@@ -42,13 +42,8 @@ class Triangle extends Shapes {
             this.textColor = textColor;
         }
 //we use polygon points (x,y coordinates) to set the dimensions for the square 
-        renderTriangle(){
-            return `<svg version="1.1"
-            width= "500" height= "500"
-            xmlns= "http://www.w3.org/2000/svg">
-            <polygon points="250,60 100,400, 400,400" fill="${this.fill}" stroke="#fff" stroke-width="3"/> 
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="60px" font-weight="700" fill="${this.textColor}"> ${this.text} </text>       
-            </svg>`
+        render(){
+            return `<svg version="1.1" width= "500" height= "500" xmlns= "http://www.w3.org/2000/svg"><polygon points="250,60 100,400, 400,400" fill="${this.fill}" stroke="#fff" stroke-width="3"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="60px" font-weight="700" fill="${this.textColor}">${this.text}</text></svg>`
         }
     }
 
@@ -60,7 +55,7 @@ class Triangle extends Shapes {
                 this.textColor = textColor;
             }
     //set standard width, height and color for stroke
-            renderSquare(){
+            render(){
                 return `<svg version="1.1"
                 width= "200" height= "300"
                 xmlns= "http://www.w3.org/2000/svg">

@@ -13,7 +13,7 @@ const init = () => {
             case 'square':
                 console.log('Square is being created')
                 const square = new Square (data.fill, data.text, data.textColor, data.width)
-                fs.writeFile("./library/Output/logo.svg", square.renderSquare(), (err)=> {
+                fs.writeFile("./library/Output/logo.svg", square.render(), (err)=> {
                     if (err) {
                         console.log('error')
                     } else {
@@ -24,7 +24,7 @@ const init = () => {
                 case 'circle':
                     console.log('Circle is being created')
                     const circle = new Circle (data.fill, data.text, data.textColor, data.width)
-                    fs.writeFile("./library/Output/logo.svg", circle.renderCircle(), (err)=> {
+                    fs.writeFile("./library/Output/logo.svg", circle.render(), (err)=> {
                         if (err) {
                             console.log('error')
                         } else {
@@ -35,7 +35,7 @@ const init = () => {
         case 'triangle':
             console.log('Triangle is being created')
             const triangle = new Triangle (data.fill, data.text, data.textColor, data.width)
-            fs.writeFile("./library/Output/logo.svg", triangle.renderTriangle(), (err)=> {
+            fs.writeFile("./library/Output/logo.svg", triangle.render(), (err)=> {
                 if (err) {
                     console.log('error')
                 } else {
